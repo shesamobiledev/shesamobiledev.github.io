@@ -1,0 +1,271 @@
+$white: #FFFFFF;
+$gray-base: #67645F;
+$gray-100: #ECECEC;
+$gray-200: #E4E4E4;
+$gray-300: #DDDDDD;
+$gray-400: #C9C8C3;
+$gray-500: #B5B4AF;
+$gray-600: #9F9E99;
+$gray-700: #7D7C77;
+$gray-800: #67645F;
+$gray-900: #4B4843;
+$black: #000000;
+
+$white: #FFFFFF;
+$gray-base-dark: #67645F;
+$gray-100-dark: #4c4843;
+$gray-200-dark: #44403c;
+$gray-300-dark: #3d3835;
+$gray-400-dark: #35312f;
+$gray-500-dark: #2d2928;
+$gray-600-dark: #252222;
+$gray-700-dark: #1e1c1b;
+$gray-800-dark: #161515;
+$gray-900-dark: #0d0c0c;
+$black: #000000;
+
+$primary: #EF62A3;
+$secondary: #FF8D1A;
+$success: #1B9E3E;
+$info: #63584D;
+$warning: #F9B115;
+$danger: #E56953;
+$light: #F7F5F3;
+$dark: #312721;
+
+$primary-text-emphasis: #783152;
+$secondary-text-emphasis: #75400B;
+$success-text-emphasis: #0E4F1F;
+$info-text-emphasis: #322C27;
+$warning-text-emphasis: #684A08;
+$danger-text-emphasis: #73342A;
+$light-text-emphasis: #4D4C4C;
+$dark-text-emphasis: #191411;
+
+$primary-bg-subtle: #FCE0ED;
+$secondary-bg-subtle: #FFE8D1;
+$success-bg-subtle: #D1ECD8;
+$info-bg-subtle: #E0DEDB;
+$warning-bg-subtle: #FEEFD0;
+$danger-bg-subtle: #FAE1DD;
+$light-bg-subtle: #F5F2F0;
+$dark-bg-subtle: #D6D4D3;
+
+$primary-border-subtle: #F7B0D1;
+$secondary-border-subtle: #FFC68C;
+$success-border-subtle: #8DCF9E;
+$info-border-subtle: #B1ABA6;
+$warning-border-subtle: #FCD88A;
+$danger-border-subtle: #F2B4A9;
+$light-border-subtle: #D2C6BC;
+$dark-border-subtle: #989390;
+
+$body-bg: #FFFFFF;
+$body-bg-dark: #141313;
+$sidebar-bg: $gray-100;
+$sidebar-bg-dark: $gray-100-dark;
+
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-validation-icons: true !default;
+$enable-negative-margins: false !default;
+$enable-deprecation-messages: true !default;
+$enable-important-utilities: true !default;
+$enable-dark-mode: true !default;
+
+$mobile-breakpoint: lg;
+
+$gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0));
+
+.App {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+}
+
+.nav {
+  flex: 1;
+  height: 100%;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.nav-title {
+  display: flex;
+  align-items: center;
+}
+
+.tagline {
+  font-style: italic;
+}
+
+//$container-max-widths: (
+//        sm: 540px,
+//        md: 680px,
+//        lg: 740px,
+//        xl: 850px,
+//        xxl: 1300px
+//) !default;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "../../node_modules/@coreui/coreui/scss/coreui";
+
+//code {
+//  background: #ede6e4;
+//  color: #2B2A2A;
+//  padding: 2px;
+//}
+
+.content {
+  display: flex;
+  align-items: center;
+  white-space: break-spaces;
+  flex: 1;
+  flex-direction: column;
+}
+
+.fullHeight {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.Screen {
+  padding-bottom: 16px;
+}
+
+.accordion {
+  margin-top: 16px;
+}
+
+.accordion-button {
+  display: flex;
+  align-items: end;
+}
+
+h2 {
+  margin-top: 32px;
+}
+
+h3 {
+  margin-top: 16px;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.svgEdu {
+  position: relative;
+  top: 0;
+  display: block;
+  margin: auto;
+  left: 0;
+  height: 70%;
+  width: 70%
+}
+
+[data-coreui-theme="dark"] {
+  --cui-on-bg: #{$light-dark};
+
+  .sidebar {
+    background-color: #{$sidebar-bg-dark};
+  }
+
+  .nav-item:hover path {
+    fill: #{$primary-dark};
+  }
+
+  .nav-item:hover line {
+    stroke: #{$primary-dark}
+  }
+
+  h1 {
+    background: linear-gradient(-79deg, #{$secondary-dark}, #{$primary-dark});
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .accordion-button {
+    code {
+      background: #6C5F56;
+      color: #2B2A2A;
+    }
+  }
+
+  .accordion-button.collapsed {
+    code {
+      background: #6C5F56;
+      color: #2B2A2A;
+    }
+  }
+}
+
+code {
+  background: #{$info-bg-subtle};
+  color: #{$info_text-emphasis};
+  padding-left: 3px;
+  padding-right: 2px;
+}
+
+.header-nav-icon {
+  margin-left: 8px;
+  margin-right: 12px;
+}
+
+[data-coreui-theme="light"] {
+  --cui-on-bg: #{$dark};
+
+  .nav-item:hover path {
+    fill: #{$primary};
+    stroke: #{$primary};
+  }
+
+  .nav-item:hover line {
+    stroke: #{$primary};
+  }
+
+  .nav-item:hover circle {
+    fill: #{$primary};
+    stroke: #{$primary};
+  }
+
+  .nav-item:hover rect {
+    stroke: #{$primary};
+    fill: #{$primary};
+  }
+
+  h1 {
+    width: fit-content;
+    line-height: normal;
+    background: linear-gradient(-79deg, #{$secondary}, #{$primary});
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .accordion-button.collapsed {
+    code {
+      background: #{$info-bg-subtle};
+      color: #{$info_text-emphasis};
+      padding-left: 3px;
+      padding-right: 2px;
+    }
+  }
+
+  .accordion-button {
+    code {
+      background: #{$white};
+      color: #{$info_text-emphasis};
+      padding-left: 3px;
+      padding-right: 2px;
+    }
+  }
+}
