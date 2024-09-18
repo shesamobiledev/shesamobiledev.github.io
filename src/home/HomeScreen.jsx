@@ -1,34 +1,25 @@
-import React from "react";
-import {CCarousel, CCarouselItem, CImage} from "@coreui/react";
-import arrayInsertCorrect from '../array/assets/Array_InsertCorrect.svg'
-import arrayFindCorrect from '../array/assets/Array_FindCorrect.svg';
-import arrayGetCorrect from '../array/assets/Array_GetCorrect.svg';
-import TestArraySvg from '../array/assets/SvgArrayFindCorrect';
+import {CButton, CPopover} from "@coreui/react";
 
 export default function HomeScreen() {
     return (
-        <div className="Carousel">
-            <CCarousel
-                wrap={false}
-                controls indicators
-                dark={true}
-                interval={false}
-                pause="hover"
-            >
-                <CCarouselItem>
-                    <CImage className="d-block w-100" src={arrayFindCorrect} alt="slide 1"/>
-                </CCarouselItem>
-                <CCarouselItem>
-                    <CImage className="d-block w-100" src={arrayGetCorrect} alt="slide 2"/>
-                </CCarouselItem>
-                <CCarouselItem>
-                    <CImage className="d-block w-100" src={arrayInsertCorrect} alt="slide 3"/>
-                </CCarouselItem>
-                <CCarouselItem>
-                    <TestArraySvg />
-                    {/*<CImage className="d-block w-100" src={arrayInsertCorrect} alt="slide 3"/>*/}
-                </CCarouselItem>
-            </CCarousel>
-        </div>
+       <div>
+           <CPopover
+               content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+               placement="right"
+               title="Dismissible popover"
+               trigger="focus"
+           >
+               <CButton color="danger">Dismissible popover</CButton>
+           </CPopover>
+
+           <CPopover
+               content="New stuff allie."
+               placement="right"
+               title="Title here"
+               trigger={['hover', 'focus']}
+           >
+               <text>Hello Allie :)</text>
+           </CPopover>
+       </div>
     );
 }
