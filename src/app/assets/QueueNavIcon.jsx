@@ -9,7 +9,7 @@ export default function HashMapNavIcon() {
                 <rect x="5.84082" y="4.83594" width="2.8" height="6.43" rx="1.4" fill="black"/>
                 <path
                     d="M2.80957 16.6119V13.0499V10.7285C5.07136 12.4198 6.59537 12.9256 9.77386 13.0499C12.9772 12.9612 14.633 12.4992 17.2739 10.7285L17.273 16.9191"
-                    stroke="black" strokeWidth="2" strokeLinejoin="round"/>
+                    stroke="black" strokeWidth="2" strokeLinejoin="round" fill="none"/>
                 <mask id="path-5-inside-1_2537_6153" fill="white">
                     <path
                         d="M6.55957 17.6929V10.9072H7.98814V16.6215C9.00855 16.6215 9.03675 17.1293 9.14886 17.6929H6.55957Z"/>
@@ -42,7 +42,6 @@ export default function HashMapNavIcon() {
                     d="M18.4342 18.0502H16.0234C16.2185 17.5201 16.4673 17.3498 17.2734 17.3359C17.9336 17.3345 18.165 17.5211 18.4342 18.0502Z"
                     fill="white" stroke="black" strokeWidth="2" strokeLinejoin="round"/>
             </svg>
-
         </CIconSvg>
     )
 }
