@@ -12,7 +12,7 @@ export default function ArrayScreen() {
     return (
         <div className="Screen">
             <h1>Array</h1>
-            <text className="tagline">A specified number of like-data in a set order.</text>
+            <p className="tagline">A specified number of like-data in a set order.</p>
             <h2>Conceptualizing Arrays</h2>
             <ul>
                 <li>I like to think of Arrays as a Train. Specifically, one for a zoo.</li>

@@ -175,19 +175,19 @@ export default function ArrayNavIcon() {
             <path
                 d="M761.257 203.459V205.763H759.121V209.747H756.481L756.457 205.763H749.329V203.051L756.529 192.803H759.121V203.459H761.257ZM756.505 203.459V196.187L751.585 203.459H756.505Z"
                 fill="var(--cui-primary-text-emphasis)"/>
-            <rect x="87.657" y="30" width="42" height="42" rx="21" fill="#E56953"/>
+            <rect x="87.657" y="30" width="42" height="42" rx="21" fill="var(--cui-danger)"/>
             <path
                 d="M102.356 44.7L108.657 51.0004M114.957 57.2993L108.657 51.0004M108.657 51.0004L102.357 57.2993M108.657 51.0004L114.957 44.6993"
                 stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-            <rect x="231.657" y="28" width="42" height="42" rx="21" fill="#E56953"/>
+            <rect x="231.657" y="28" width="42" height="42" rx="21" fill="var(--cui-danger)"/>
             <path
                 d="M246.356 42.7L252.657 49.0004M258.957 55.2993L252.657 49.0004M252.657 49.0004L246.357 55.2993M252.657 49.0004L258.957 42.6993"
                 stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-            <rect x="372.657" y="28" width="42" height="42" rx="21" fill="#E56953"/>
+            <rect x="372.657" y="28" width="42" height="42" rx="21" fill="var(--cui-danger)"/>
             <path
                 d="M387.356 42.7L393.657 49.0004M399.957 55.2993L393.657 49.0004M393.657 49.0004L387.357 55.2993M393.657 49.0004L399.957 42.6993"
                 stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-            <rect x="513.657" y="28" width="42" height="42" rx="21" fill="#E56953"/>
+            <rect x="513.657" y="28" width="42" height="42" rx="21" fill="var(--cui-danger)"/>
             <path
                 d="M528.356 42.7L534.657 49.0004M540.957 55.2993L534.657 49.0004M534.657 49.0004L528.357 55.2993M534.657 49.0004L540.957 42.6993"
                 stroke="white" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>

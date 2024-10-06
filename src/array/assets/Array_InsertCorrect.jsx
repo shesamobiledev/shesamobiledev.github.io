@@ -1,6 +1,4 @@
-import {CPopover} from "@coreui/react";
-
-export default function ArrayNavIcon() {
+export default function Array_InsertCorrect() {
     return (
         <svg aria-label="Inserting element into an array looking at the worst case - which is correct."
              className="svgEdu" width="883" height="270" viewBox="0 0 883 270" fill="none"
